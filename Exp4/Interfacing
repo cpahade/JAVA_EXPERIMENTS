@@ -1,0 +1,18 @@
+package JavaExperiments;
+interface Animal {
+	void makeSound();
+}
+class dog implements Animal {
+	public void makeSound()
+	{
+		System.out.println("The Dog barks: Woof Woof!");
+	}
+}
+
+public class Interfacing {
+	public static void main(String[] args) 
+	{
+		dog mydog = new dog();
+		mydog.makeSound();
+	}
+}
