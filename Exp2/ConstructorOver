@@ -1,0 +1,32 @@
+package JavaExperiments;
+class Car2 {
+	String model;
+	int year;
+	public Car2()
+	{
+		model = "unknown";
+		year = 2023;
+	}
+	public Car2(String model , int year)
+	{
+		this.model = model;
+		this.year =year;
+	}
+	public void displayInfo() 
+	{
+		System.out.println("Model: " +model);
+		System.out.println("Year: " +year);
+	}
+}
+
+public class ConstructorOver {
+	public static void main(String[] args)
+	{
+		Car2 car1 = new Car2();
+		car1.displayInfo();
+		
+		Car2 car2 = new Car2("Tesla" , 2023);
+		car2.displayInfo();
+	}
+
+}
