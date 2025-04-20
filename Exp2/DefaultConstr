@@ -1,0 +1,15 @@
+package JavaExperiments;
+class Car {
+	Car()
+	{
+		System.out.println("A new car is Created");
+	}
+}
+
+public class Defaultconstr {
+
+	public static void main(String[] args) 
+	{
+		Car mycar = new Car();
+	}
+}
