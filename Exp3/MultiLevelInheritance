@@ -1,0 +1,29 @@
+class Animals {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+
+class Mammal extends Animals {
+    void walk() {
+        System.out.println("Mammal walks");
+    }
+}
+
+
+class Dogs extends Mammal {
+    void bark() {
+        System.out.println("Dog Barks");
+    }
+}
+
+public class MultiLevelInheritance {
+    public static void main(String[] args) {
+        Dogs d = new Dogs();
+        d.sound();
+        d.walk();  
+        d.bark();  
+    }
+}
+
