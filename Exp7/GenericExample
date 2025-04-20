@@ -1,0 +1,32 @@
+package JavaExperiments;
+
+class Box<T> {
+	private T value;
+	
+	public void setValue(T value)
+	{
+		this.value = value;
+	}
+	public T getValue() 
+	{
+		return value;
+	}
+}
+
+public class GenericExample {
+
+	public static void main(String[] args) 
+	{
+		Box<Integer> intBox = new Box<>();
+		intBox.setValue(10);
+		System.out.println("Integer Value: " + intBox.getValue());
+		
+		 Box<String> strBox = new Box<>();
+	     strBox.setValue("Generics in Java");
+	     System.out.println("String Value: " + strBox.getValue());
+	     
+	     Box<Double> doubleBox = new Box<>();
+	     doubleBox.setValue(99.9);
+	     System.out.println("Double Value: " + doubleBox.getValue());		
+	}
+}
